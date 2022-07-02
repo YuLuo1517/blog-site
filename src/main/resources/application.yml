@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: 个人博客
+
+
+server:
+  port: 9666
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: org.binary.blogapp.pojo
